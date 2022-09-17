@@ -1,0 +1,116 @@
+
+/* testimonial-single */
+.fast-testimonial-area{
+	overflow: hidden;
+	margin-bottom: 0px;
+	padding-bottom: 30px;
+}
+.fast-testimonial-single{
+	text-align: center;
+	margin: 4px 10px;
+	padding: 20px;
+	box-sizing: border-box;
+	box-shadow: 0px 3px 10px #dddddd;
+	font-family: 'Open Sans', sans-serif;
+	position: relative;
+	border-radius: 10px;
+	background: #ffffff;
+}
+.fast-testimonial-single:after{
+	content: "";
+	position: absolute;
+	height: 6px;
+	width: 50px;
+	background: #ff0707;
+	left: 3%;
+	top: 0;
+}
+.fast-testimonial-single:before{
+	content: "";
+	position: absolute;
+	height: 6px;
+	width: 50px;
+	background: #ff0707;
+	right: 3%;
+	bottom: 0;
+}
+.fast-testimonial-single img{
+	height: 100px;
+	width: 100px;
+	border-radius: 50%;
+	margin: auto !important;
+	border: 1px solid #dddddd;
+	padding: 5px;
+}
+.fast-testimonial-single h2{
+	font-weight: 600;
+	margin: 0 !important;
+	font-size: 28px;
+	padding: 5px !important;
+	padding-top: 12px !important;
+	color: #ff0707;
+	font-family: 'Open Sans', sans-serif;
+	cursor: text;
+}
+.fast-testimonial-single h5{
+	font-weight: 600;
+	margin: 0;
+	font-size: 16px;
+	margin: 0 !important;
+	padding-bottom: 5px !important;
+	color: #ff0707;
+	font-family: 'Open Sans', sans-serif;
+	cursor: text;
+}
+.fast-testimonial-single ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.fast-testimonial-single ul li{
+	display: inline-block;
+	font-size: 15px;
+	padding: 4px;
+	margin: 0px;
+	color: #ff0707;
+}
+.fast-testimonial-single ul li.withoutstar{
+	opacity: .5;
+}
+.fast-testimonial-single ul li i{
+	font-size: 15px;
+}
+.fast-testimonial-single p {
+	font-size: 16px !important;
+	color: #111;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	line-height: 26px;
+	margin: 0 !important;
+	max-width: 800px;
+	margin: auto;
+	padding-top: 10px !important;
+	cursor: text;
+}
+/* dots */
+.fast-testimonial-area .slick-dots{
+	bottom: 0px;
+}
+.fast-testimonial-area .slick-dots li button{
+	background: #ff0707;
+	opacity: .7;
+}
+.fast-testimonial-area .slick-dots li button:hover{
+	opacity: 1;
+}
+.fast-testimonial-area .slick-dots li.slick-active button{
+	opacity: 1;
+}
+.fast-testimonial-area .slick-dots li button::before{
+	color: #ffffff;
+	font-size: 10px;
+	opacity: .8;	
+}
+.fast-testimonial-area .slick-dots li.slick-active button::before{
+	opacity: 1;
+}
