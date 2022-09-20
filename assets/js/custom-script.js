@@ -1,5 +1,5 @@
-$(document).ready(function(){
-  	$('.fast-testimonial-area').slick({
+jQuery(document).ready(function(){
+  	jQuery('.fast-testimonial-area').slick({
   		dots: true,
   		arrows: false,
 		infinite: true,
