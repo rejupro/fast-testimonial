@@ -49,18 +49,11 @@ class Fast_Testimonial_Admin
      */
     function fast_testimonial_admin_script_callback() {
         // css
-        wp_register_style('fast-testimonial_jqueryui', plugin_dir_url(__DIR__) . 'assets/css/jquery-ui.css', array(), FASTM_PLUGIN_VERSION);
-        wp_enqueue_style('fast-testimonial_jqueryui');
-        wp_enqueue_style('fast-testimonial_colorpicker', plugin_dir_url(__DIR__) . 'assets/css/jquery.colorpicker.css', array(), FASTM_PLUGIN_VERSION);
         wp_enqueue_style('fast_testimonialadmin', plugin_dir_url(__DIR__) . 'assets/css/adminstyle.css', array(), FASTM_PLUGIN_VERSION);
 
         // js
-        wp_register_script('plugin-jquery', plugin_dir_url(__DIR__) . 'assets/js/plugin-jquery.js', array(), FASTM_PLUGIN_VERSION, false);
-        wp_enqueue_script('plugin-jquery');
-        wp_register_script('plugin-jquery-ui', plugin_dir_url(__DIR__) . 'assets/js/jquery-ui.js', array(), FASTM_PLUGIN_VERSION, false);
-        wp_enqueue_script('plugin-jquery-ui');
-        wp_enqueue_script('jquery-uicolorpicker', plugin_dir_url(__DIR__) . 'assets/js/jquery.colorpicker.js', array( 'jquery' ), FASTM_PLUGIN_VERSION, false);
-        wp_enqueue_script('admin-script', plugin_dir_url(__DIR__) . 'assets/js/admin.js', array( 'jquery' ), FASTM_PLUGIN_VERSION, true);
+        wp_enqueue_script('jquery');
+        wp_enqueue_script('admin-script', plugin_dir_url(__DIR__) . 'assets/js/admin.js', array( 'jquery','jquery-ui-core' ), FASTM_PLUGIN_VERSION, true);
 
     }
 

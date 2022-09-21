@@ -168,8 +168,8 @@ class Fast_Testimonial_Frontend
         }      
         
         // js
-        wp_register_script('plugin-jquery', plugin_dir_url(__DIR__) . 'assets/js/plugin-jquery.js', array(), FASTM_PLUGIN_VERSION, true);
-        wp_enqueue_script('plugin-jquery');
+        
+        wp_enqueue_script('jquery');
         wp_enqueue_script('fast_testimonialjs', plugin_dir_url(__DIR__) . 'assets/js/slick.min.js', array( 'jquery' ), FASTM_PLUGIN_VERSION, true);
         wp_enqueue_script('fast_testimonial_customscript', plugin_dir_url(__DIR__) . 'assets/js/custom-script.js', array( 'jquery' ), FASTM_PLUGIN_VERSION, true);
     }
